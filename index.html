@@ -285,11 +285,13 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Jesvin P D. Built with passion and code.</p>
+            <p>&copy; <span id="year"></span> Jesvin P D. Built with passion and code.</p>
         </div>
     </footer>
 
     <script>
+        //changes the year at footer to current year
+         document.getElementById("year").textContent = new Date().getFullYear();
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
